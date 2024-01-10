@@ -1,0 +1,26 @@
+﻿/*
+ *Auhor: Dipsa Khun, 000870839, Professor: Steve Adams, 01/07/2022
+*/
+
+
+.boxstyle{
+    margin-left:10px;
+    border: 2px ;
+    border-radius: 5px;   
+    
+}
+/* bold font for finalresult*/
+#finalresult{
+    font-weight:bold;
+}
+/* roungind image */
+img{
+    border-radius: 150px;
+}
+
+/* setting help button on the top-right corner  */
+#ongoinghelp{
+    float:right;
+    margin-right:40px;
+    margin-bottom:40px;
+}

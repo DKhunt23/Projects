@@ -1,0 +1,19 @@
+﻿
+@media screen and (max-width:600px)
+    
+   { 
+     .img{
+         display:block;
+     }
+     nav a{
+         border:none;
+         display:block;
+		}
+     header img{
+         display:none;
+     }
+     .container
+     {
+        display:block;
+     }
+   }

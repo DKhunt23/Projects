@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- Author: Dipsa Khunt, 000870839, Professor: Pawanjit Multani-->
+    <title>Bedroom Page</title>
+
+    <link href="apartment_layout.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Sandy and Leslie's Apartment</h1>
+        <p>Click a room  for detail view.</p>
+        <img src="images/apartmentfloorplan.jpg" alt="image" width="600" height="407" usemap="#Map"/>
+    </header>
+     <map name="Map">
+        <area shape="rect" coords="48,3,199,161" href="bedroom.html" alt="detail of Bedroom 1" title="detail of Bedroom-1">
+        <area shape="e=rect" coords="166,181,166,181" href="bedroom.html" alt="detail of Bedroom 2" title="detail of Bedroom-2">
+		<area shape="circle" coords="" href="diningroom.html" alt="details of dining room" title="detail of dining room">
+		<area shape="rect" coords="203,10,353,165" href="livingroom.html" alt="details of living room" title="details of Livingroom">
+		<area shape="rect" coords="245,231,391,398" href="kitchen.html" alt="details of kitchen"  title="details of Kitchen">
+		
+		<area shape="rect" coords="1,5,580,410" href="apartment.html" alt="main apartment">
+	</map><br>
+    
+    <nav>
+        <a href="apartment.html">Apartment</a> 
+        <a href="bedroom.html">Bedroom 1</a> 
+        <a href="bedroom.html">Bedroom 2</a> 
+        <a href="diningroom.html">Dining Room</a> 
+        <a href="kitchen.html">Kitchen</a> 
+        <a href="livingroom.html" style="border-right:none">Living Room</a>
+    </nav>
+
+     <div class="back">
+        <h3 style="text-align:center;">Kitchen Detail</h3>
+    </div>
+    <header>
+         <img src="images/kitchen_lg.jpg" alt="kitchen" >
+    </header>
+
+    <div class="back">
+        <h3>Apartment services:</h3>
+    </div>
+    <table style="width=100% ; float:left: text-align:left">
+                <tr>
+                    <th>Serice</th>
+                    <th>Day/Hours</th>
+                </tr>
+                <tr>
+                    <td>Gym</td> 
+                    <td rowspan="2">Monday-Friday 6am-10pm<br>Saturday 8am-8pm<br>Sunday 8am-5pm</td>
+                </tr>
+                <tr >
+                    <td>Pool</td>
+                </tr>
+                <tr>
+                    <td>Laundry</td>
+                    <td>24/7</td>
+                </tr>
+                <tr id="caption">
+                    <td colspan="2">Please do not allow people you do not know to use these facilites.</td>
+                </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="float:left">
+        For more information contact: <a href="mailto:SandyandLeslie@example.com">SandyandLeslie@example.com</a> or <a href="tel:+(905) 555-1234">(905) 555-1234</a>
+        <br><br>
+        &copy; Sandy and Leslie 2020
+    </footer>
+</body>
+</html>

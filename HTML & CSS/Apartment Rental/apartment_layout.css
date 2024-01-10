@@ -1,0 +1,98 @@
+﻿/*Author:Dipsa 000870839 Professor:Pawanjit Multani*/
+
+header{
+	text-align:center;
+
+}
+
+nav a{
+	align: center;
+	padding: 10px;
+	border-right: 2px solid black;	
+}
+
+.class0{
+	text-align:left;
+	grid-gap:10px 10px;
+	padding:0;
+
+}
+
+.container{
+	margin:0;
+	display:grid;
+	grid-template-columns:30px 1.5fr 2fr 2.5fr;
+	grid-gap:10px 10px;
+	font-size:16px;
+
+}
+.back{
+	background:#EAC108;
+	line-height:40px;
+	padding-left:10px;
+	font-weight:bold;
+	font-family: Verdana;
+}
+table
+{
+	border:2px solid black;
+	border-collapse:collapse;
+	height:3px;	
+	margin-top:15px;
+	margin:auto;
+}
+#caption{
+	background:#b1f2d2;
+}
+th,td{
+	border:1px solid black;
+	height:40px;
+	padding-left:10px;
+	font-family: Verdana;
+	
+}
+
+th{
+	background:lightgray;
+}
+body
+{
+	text-align:center;
+    font-style:verdana;
+}
+
+.container2{
+	margin-left:35px;
+}
+.flexcontainer{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: stretch;
+	flex-direction: row;
+}
+.flexcontainer >div{
+	text-align:left;
+	line-height:30px;
+	margin:15px;
+	
+}
+#dk{
+	margin-left:3rem;
+	margin-right:3rem;
+}
+#Map{
+	border:solid;
+	color:red;
+}
+#kk{
+	background:#EA6F08;
+	width: 200px;
+	color:white;
+	font-weight:bold;
+	padding-left:10px;
+	font-family: Verdana;
+}
+footer{
+	text-align:left;
+}

@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- Author: Dipsa Khunt 000870839, Professor: Pawanjit Multani-->
+    <title>Final Exam Fall 2022</title>
+
+    <style>
+        header{
+            text-align:center;
+            font-size:2em;
+        }
+        body{
+            
+            font-family:MS Comic sans, cursive;
+        }
+        form{
+				border:2px dashed black;
+				padding-left:25px;
+                padding-right:25px;
+				padding-bottom:25px;
+        }
+        .container{
+            margin:0;
+            display:grid;
+            grid-template-columns:1fr 2fr 2fr;
+            grid-gap: 10px 10px;
+            
+        }
+        .cell{
+            grid-gap: 10px 10px;
+            padding:0;
+        }
+        fieldset{
+				border:1px solid;
+			}
+         footer{
+             border-top:1px solid;
+             text-align:center;
+         }  
+         @media screen and (max-width:800px)
+         {
+             .container{
+                display:block;
+                }
+         }
+         th,td{
+             border:1px solid;
+             padding:5px;
+         }
+         table{
+             border-collapse:collapse;
+             height:80%;
+
+         }
+         th{
+             background-color:grey;
+             color:white;
+
+         }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Nutrition Conference</p>
+    </header>
+
+    <div class="container">
+        <div class="cell cell-1">
+            <p>
+                Refer to:<br>
+                <a href="http://food-guide.canada.ca/en">Canada's Food Guide </a><br>
+                <ul>
+                    <li>Healthy food choices</li>
+                    <li>Eating habits</li>
+                    <li>Recipes</li>
+                </ul>
+
+            </p>
+        </div>
+
+        <div class="cell cell-2">
+            <form method="POST" action= "https://csunix.mohawkcollege.ca/tooltime/showit.pl" >
+            <p style="font-weight:bold;">Survey</p>
+            <fieldset>
+                <legend>
+                    <p>
+                        &nbsp;&nbsp;Activity (choose multiple)&nbsp;&nbsp;
+                    </p>
+                </legend>
+                <input type="checkbox" name = "run" value = "run1"/>
+                <label for = "run">Run</label><br>
+                <input type="checkbox" name = "cycle" value = "cycle1"/>
+                <label for = "cycle">Cycle</label><br>
+                <input type="checkbox" name = "swim" value = "swim1"/>
+                <label for = "run">Run</label><br>
+                <input type="checkbox" name = "playaspot" value = "playaspot1"/>
+                <label for = "playaspot">Play a sport</label><br>
+                
+                <p>How often?</p>
+                <input type = "radio" name = "Rating" value = "3+ times pr week" />3+ times pr week<br>
+                <input type = "radio" name = "Rating" value = "3+ times pr week" />1or2 times pr week<br>
+                <input type = "radio" name = "Rating" value = "3+ times pr week" />Once a week
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <p>
+                        &nbsp;&nbsp; Suggestions to motivate the people to eat healthy? &nbsp;&nbsp;
+                    </p>
+                    <textarea rows="7" cols="64">
+
+					</textarea>
+                </legend>
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    <p>
+                        &nbsp;&nbsp; Deit Information &nbsp;&nbsp;
+                    </p>
+                </legend>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="lab" for = "Specialized Deit">Specialized Deit?</label>
+                &nbsp;&nbsp;<input type = "text" name = "Specialized Deit" size="20" maxlength ="20"  class = "text" placeholder="Vegan,Keto,etc" /><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="lab" for = "Favourite Vegetable">Favourite Vegetable</label>
+                &nbsp;&nbsp;<input type = "text" name = "Favourite Vegetable" size="20" maxlength ="20"  class = "text"  /><br>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+                <label for="Favourite Fruit">Favourite Fruit?</label>
+                &nbsp;&nbsp;
+                        <select> name="Favourite Fruit" id="Favourite Fruit">
+                        <option value="Apricot">Apricot</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Mango">Mango</option>
+                        <option value="Kiwi">Kiwi</option>
+                        </select>
+            </fieldset>
+            <br>
+            <input type = "submit" value = "Send Survey" class = "button" class="c1"/>
+			<input type = "submit" value = "Clear Survey" class = "button" class="c1" />
+        </div>
+
+        <div class="cell cell-3">
+            <table>
+			<caption>Info sessions timetable</caption>
+			
+			<tr>
+				<th>Conference room</th>
+				<th>9:00am</th>
+				<th>11:00am</th>
+				<th>1:00pm</th>
+				<th>3:00pm</th>
+				<th>7:00pm</th>
+			</tr>
+			<tr>
+				<td>Lyra</td>
+				<td colspan="3" rowspan="2">Lion Dates</td>
+				<td>Keto Diets</td>
+				<td rowspan = "5">Vegan Diets</td>
+			</tr>
+			
+			<tr>
+				<td>Perseus</td>
+                <td rowspan="2">Fruits</td>
+			</tr>
+
+            <tr>
+                <td>Virgo</td>
+                <td rowspan="2">Legumes</td>
+                <td>Dairy</td>
+                <td>Peanuts</td>
+            </tr>
+            <tr>
+                <td>Taurus</td>
+                <td colspan="3">Vegetarian Diets</td>
+            </tr>
+
+            <tr>
+                <td>Orion</td>
+                <td colspan="3">Protein</td>
+                <td>Dairy</td>
+            </tr>
+            </table>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <footer>
+        <p>Survey Says…© 2022</p>
+    </footer>
+</body>
+</html>

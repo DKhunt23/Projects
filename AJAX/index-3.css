@@ -1,0 +1,28 @@
+
+/* Author: Dipsa Khunt, 000870839, 30/07/22*/
+
+header{
+    height: 50px;
+}
+#errorMessage{
+    height: 25px;
+}
+
+#tableData{
+    width: 100% !important;
+}
+
+button{
+    background-color: rosybrown;
+    text-decoration: none !important;
+    padding: 10px 20px !important;
+    margin: 5px 20px !important;
+    border-radius: 20px !important;
+    color: navajowhite !important;
+    font-weight: bolder !important;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+

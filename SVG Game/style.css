@@ -1,0 +1,50 @@
+﻿/*
+ *Auhor: Dipsa Khunt, 000870839, 17/07/2022
+*/
+/* setting postion relative of the div */
+#animatedResult {
+    
+  position: relative;
+  
+}
+
+.feildbox{
+    margin-left:10px;
+    border: 2px ;
+    border-radius: 5px;   
+    
+}
+/* displaying finalresult with fontsize and bold*/
+#final-Result{
+    
+  font-size:20px ;
+  font-weight: 200;
+}
+footer{
+  border-top: 2px solid black;
+  margin-top: 70px;
+}
+/* applying animation to title of game */
+#headanimation{
+  animation: hideshow 1s ease infinite;
+}
+/*css property for rounding the image */
+img{
+    border-radius: 150px;
+}
+/* styling svg text */
+svg{
+    
+    font-size: 40px;
+    font-weight:600;
+    
+}
+/* light on-off on title of game */
+  @keyframes hideshow {
+    0% { opacity: 1; }
+    10% { opacity: 1; }
+    15% { opacity: 0.5; }
+    100% { opacity: 0.5; }
+  } 
+  
+  

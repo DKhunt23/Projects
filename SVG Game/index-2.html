@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!-- Auhor: Dipsa Khunt, 000870839, 17/07/2022-->
+    <!-- Assignment-5 regarding svg element-->
+    <!-- I have used my previous assignment and modified according to the critteria of this assignment.
+        A coin toss game initially verifies the user's username and the number of tosses they want. Whoever gets the most heads will win the game.
+        After the game begins, there are buttons for toss, reset, and help. Toss will choose either number 1 or 2.
+        Players' values will be reset to 0 when you use reset. -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment-5</title>
+
+    <!--link for external script of java-->
+    <script src="script.js"></script>
+
+    <!-- link for external-style-->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--css-boot-strap copied link - https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- js-boot-strap copied link- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-info"> 
+
+    
+    <div class="container mt-5 text-center">
+
+        <div id="gameStart" class="m-5">
+            <svg height="200" width="440">
+            
+                <!-- path and setting text at that path-->
+                
+                <path  d="M 100 150 q 100 -100 200 0" id="gamename" fill="none"  />
+                <text  font-size="30" font-family="Sans serif" fill="black" >
+                  <textPath href="#gamename" id="tp" startOffset="5%">
+                      Coin  Toss  Game 
+                  </textPath>
+            </svg>
+                    
+            
+            <!-- obtaining side-by-side images with bootstrap -->
+            <div class="col-sm-12">
+                <div>
+                    
+                    <p>Your Name:</p> 
+                    <!-- playername text-feild-->
+                    <p><input type = "text" class="feildbox" id = "player-name" value = ""></p>
+                    <!-- showing an error message if the username meets specification-->
+                    <p id = "errorMsg"> Enter 5-10 alphabets only  </p>
+                </div>
+              
+                <div>
+                    <p>Toss number:</p>
+                    <!--tosscount player want-->
+                    <p><input type = "number" class="feildbox" id = "toss-count" value = ""></p>
+                    <!-- showing an  error-message if the entered number is non zero-->
+                    <p id = "errorMsg2">Enter the toss-count</p>
+                </div>
+
+                <div class="mt-5">
+                    <!--  button for Coin Toss Game-->
+                    <button type="button" class="btn btn-light" id="startGameButton">Start Game</button>
+                </div>
+            </div> 
+            <!-- footer with my name , id and assignment-->
+            <footer>
+                <p id="footercolor">&copy Dipsa Khunt, 000870839,  Assignment-5, 17/07/22</p>
+            </footer>
+        </div>
+    </div>
+
+    
+    <div class="container text-center ">
+        <div id="Game">
+
+            <div>
+                <svg height="110" width="700">
+                    <ellipse cx="350" cy="50" rx="290" ry="40" style="fill:white" id="headanimation"/>
+                    <ellipse cx="330" cy="50" rx="250" ry="30" style="fill:#0dcaf0" />
+                    <text x="180" y="65" fill="black">Coin Toss Game</text>
+                  </svg>
+            </div>
+            <div class=row>
+            <div class="col-sm-6">
+                <!-- headImage for player-->
+                <img src="images/head.png" alt="headimage" id="player-Image">
+                <!-- paragraph for displaying the outcome to user head and tail-->
+                <p id = "player-Result"></p>
+            </div>
+            
+            <div class="col-sm-6">
+                <!-- headImage for system-->
+                <img src="images/head.png" alt="headimage" id="system-Image">
+                <!-- paragraph for the outcome to computer head and tail-->
+                <p id = "system-Result"></p>
+            </div>
+            
+            <div id="resultanimation">
+                <svg height="90" width="500" id="animatedResult">
+                    <polygon points="135,40 385,40 360,80 110,80 " style="fill:#5c6c87;" />
+                    <text x="135" y="68" fill="white" id = "final-Result">Wish you A Good Luck!!</text>
+                </svg>
+                <!-- displaying the outcome of toss-game -->
+            </div>
+            <div id="button">
+                <br><br>
+                <!-- button - toss to toss the coin --> 
+                <button type="button"  class="btn btn-light" id="toss-Button" >Toss</button>
+                <!-- button - Reset to start game again--> 
+                <button type="button"  class="btn btn-light" id="reset-Button">Reset</button>
+            </div>
+        </div>
+    </div> 
+
+    
+</body>
+</html>

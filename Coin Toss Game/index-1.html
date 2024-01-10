@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    
+    <!-- Auhor: Dipsa Khun, 000870839, Professor: Steve Adams, 01/07/2022-->
+    <!-- Assignmen- is about use of html, css, javascript and bootstrap5-->
+    <!-- A coin toss game first validate the username and no of toss user want. Game will be in favour of who gets more number of head.
+         After game starts -There are toss, reset and help button. Toss-will generate random number 1or2. Reset- it will set player values to zero. 
+         Help - explain how game works-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment-4</title>
+
+    <!-- External javascript link-->
+    <script src="game.js"></script>
+
+    <!-- External css link-->
+    <link rel="stylesheet" href="gamecss.css"/>
+
+    <!--bootstrap css copy link- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!--bootstrap js copy link- https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-info"> <!--applied background color-->
+
+    <!-- bootstrap class for getting text center and apllying for margin top-->
+    <header class="text-center mt-5"> 
+        <!-- Game heading using h1 tag-->
+        <h1>Coin Toss Game</h1> 
+        <!-- top-right corner help button-->
+        <button type="button" class="btn btn-light" id="ongoinghelp">Help</button>
+    </header>
+
+    <!--user validation div-->
+    <div class="user-validation container mt-5 text-center">
+
+        
+        <div id="startGame" class="m-5">
+            
+            <!-- use of bootstrap for getting image side by side or making responsive-->
+            <div class="col-sm-12">
+                <div>
+                    <!-- used td for table form display-->
+                    <td>Enter User Name:</td>
+                    <!-- textfeild for username -->
+                    <td><input type = "text" class="boxstyle" id = "userName" value = ""></td>
+                    <!-- displaying error message whether the username is correct-->
+                    <td><p id = "errormessage">Username must have 4-8 ascending letters</p></td>
+                </div>
+              
+                <div>
+                    <td>Enter no. of toss:</td>
+                    <!--textfeild for no of toss user want-->
+                    <td><input type = "number" class="boxstyle" id = "noofToss" value = ""></td>
+                    <!-- error message for 0 or negative value-->
+                    <td><p id = "errormessage2">Please enter Non-zero number</p></td>
+                </div>
+
+                <div class="mt-5">
+                    <!-- start button for starting Game-->
+                    <button type="button" class="btn btn-light" id="startButton">Start Game</button>
+                </div>
+                <div class="mt-5">
+                    <!--help button will explain game-->
+                    <button type="button" class="btn btn-light" id="help">Help</button>   
+                </div>    
+            </div> 
+        </div>
+    </div>
+
+    <!-- another div class for main part of game-->
+    <div class="container text-center ">
+
+        <div id="mainGame">
+
+            <div class=row>
+            <div class="col-sm-6">
+                <!-- image of coin with head -->
+                <img src="images/head.png" alt="headimage" id="userimage">
+                <!-- for displaying userresult-->
+                <p id = "userresult"></p>
+            </div>
+            
+            <div class="col-sm-6">
+                <!-- image of coin with head -->
+                <img src="images/head.png" alt="headimage" id="computerimage">
+                <!-- for displaying computerresult-->
+                <p id = "computerresult"></p>
+            </div>
+            
+            <div>
+                <!-- Final result will be displayed with this -->
+                <p id = "finalresult">Wish you A Good Luck!!</p>
+                <br><br>
+                <!-- toss button will generate random value --> 
+                <button type="button" class="btn btn-light" id="toss">Toss</button>
+                <!-- reset button will generate set everything back as it was --> 
+                <button type="button" class="btn btn-light" id="reset">Reset</button>
+            </div>
+            
+            <div class="mt-5">
+                <!-- help paragraph which is on the maingame part-->
+                <p id="ongoinghelppara"></p>
+            <div>
+        </div>
+    </div> 
+</body>
+</html>
